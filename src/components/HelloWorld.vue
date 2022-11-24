@@ -11,7 +11,7 @@ function playSpeechSynthesis() {
   const SpeechRecognitionClass =   webkitSpeechRecognition;
   const recognition = new SpeechRecognitionClass();
 
-  recognition.lang = 'de-DE';
+  recognition.lang = 'fr-Fr';
   recognition.interimResults = false;
 
   // event current voice reco word
@@ -36,7 +36,7 @@ function playSpeechSynthesis() {
 function synthesis() {
   playSpeechSynthesis();
   const utterance = new SpeechSynthesisUtterance(text.value);
-  utterance.lang = 'de-DE';
+  utterance.lang = 'fr-Fr';
   speechSynthesis.speak(utterance);
 }
 </script>
